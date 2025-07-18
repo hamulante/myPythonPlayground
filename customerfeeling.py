@@ -1,9 +1,9 @@
 #referenece: https://learn.microsoft.com/zh-cn/azure/ai-services/language-service/sentiment-opinion-mining/quickstart?tabs=windows&pivots=programming-language-python#code-example
 
-#language_key = 'GHQu3HVecma9RB9KFlrBMScRBUcYWeDcjERIMu60zdu7ClGCNuitJQQJ99BGAC3pKaRXJ3w3AAAaACOGP1mZ'
+#language_key = ''
 #language_key = os.environ.get('LANGUAGE_KEY')
 
-#language_endpoint = 'https://customerfeeling.cognitiveservices.azure.com/'
+#language_endpoint = ''
 #language_endpoint = os.environ.get('LANGUAGE_ENDPOINT')
 
 # pip install azure-ai-textanalytics==5.2.0 done already
