@@ -11,7 +11,6 @@ def finderrorsinlogs(path):
     error_result=[]#用来存放找到的error记录，不然在for循环内的变量外面读不到
 
     for file in os.listdir(path):
-        print(file)
         n_file=n_file+1#扫描的文件数量+1
 
         full_path = os.path.join(path,file)#接下来找文件都得用完整路径
@@ -19,7 +18,6 @@ def finderrorsinlogs(path):
         with open(full_path,'r',encoding='utf-8') as opened_file:#read only
             for line_number,line in enumerate(opened_file,start=1):
                 if "error" in line.lower():#防止文本里error是大写
-                    print (line)
                     n_error=n_error+1 #找到的error数量+1
                     error_result.append((file,line_number,line))#3个元素存成一个大元素
     

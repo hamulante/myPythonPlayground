@@ -23,8 +23,8 @@ def addtimestamp(path):
         print(file)
         new_path = os.path.join(path,timestamp+'_'+file)
         print(new_path)
-        
-        os.rename(old_path,new_path) #os.rename只能找完整路径
+
+        os.rename(old_path,new_path) #os.renamey必须用完整路径
     return
 
 if __name__=='__main__':
